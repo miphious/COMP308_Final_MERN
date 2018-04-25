@@ -3,7 +3,7 @@
 const server = require("../dist/server");
 const http = require("http");
 
-const httpPort = normalizePort(process.env.PORT || 3000);
+const httpPort = normalizePort(process.env.PORT || 3001);
 let httpServer;
 server.Server.bootstrap()
     .then(server => {
