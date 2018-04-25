@@ -15,14 +15,17 @@ console.log('# Build Express app'); {
     $.exec('npm run "build:prod"')
 }
 
-console.log('# Build Angular app'); {
-    $.cd(rootDir + '/ng')
+console.log('# Build React app'); {
+    $.cd(rootDir + '/client')
 
     console.log('## Restore packages')
     $.exec('npm install')
 
     console.log('## Build app')
-    $.exec('npm run "build:prod"')
+    $.exec('npm run build')
+
+    console.log('## Copy react app')
+    $.cp('-R', rootDir + '/client/build', rootDir + '/dist/public')
 }
 
 $.cd(rootDir)
