@@ -2,7 +2,7 @@ export interface AppConfig {
     db: string;
     sessionSecret: string;
     NPM_CONFIG_PRODUCTION : false;
-    APP_MONGO : mongodb://<suthas.gan@gmail.com>:<suthas4suthas>@abc.mlab.com:51799/foo-db;
+    APP_MONGO : mongodb:
     APP_SESSION_SECRET : secret;
 }
 
