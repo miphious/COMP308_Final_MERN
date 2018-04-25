@@ -1,9 +1,6 @@
 export interface AppConfig {
     db: string;
     sessionSecret: string;
-    NPM_CONFIG_PRODUCTION : false;
-    APP_MONGO : mongodb:
-    APP_SESSION_SECRET : secret;
 }
 
 export function loadAppConfigurations(): AppConfig {
