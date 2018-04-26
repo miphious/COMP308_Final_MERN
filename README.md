@@ -1,6 +1,6 @@
 # COMP 308 Project
 
-Hate this Course.
+Patient/Nurse Interaction CRUD website.
 
 ## Development
 ### Mongo DB
