@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {BrowserRouter as Router,Link} from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -7,13 +7,13 @@ class Header extends Component {
             <nav className="pt-navbar">
                 <div className="pt-navbar-group pt-align-left">
                     <div className="pt-navbar-heading">MyClinic</div>
-                    <Link className="pt-button pt-minimal" to="/">Home</Link>
+                    <Router exact path="/"className="pt-button pt-minimal" >Home</Router>
                 </div>
                 
                 <div className="pt-navbar-group pt-align-right">
-                    <Link className="pt-button pt-minimal" to="/login">Login</Link>
+                    <Router path="/login" className="pt-button pt-minimal" >Login</Router>
                     <span className="pt-navbar-divider"/>
-                    <Link className="pt-button pt-minimal" to="/login">Register</Link>
+                    <Router path="/login" className="pt-button pt-minimal" >Register</Router>
                 </div>
             </nav>
 
