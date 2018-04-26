@@ -7,13 +7,13 @@ class Header extends Component {
             <nav className="pt-navbar">
                 <div className="pt-navbar-group pt-align-left">
                     <div className="pt-navbar-heading">MyClinic</div>
-                    <Link className="pt-button pt-minimal pt-icon-home" to="/">Home</Link>
+                    <Link className="pt-button pt-minimal" to="/">Home</Link>
                 </div>
                 
                 <div className="pt-navbar-group pt-align-right">
-                    <Link className="pt-button pt-minimal pt-icon-user" to="/login">Login</Link>
+                    <Link className="pt-button pt-minimal" to="/login">Login</Link>
                     <span className="pt-navbar-divider"/>
-                    <Link className="pt-button pt-minimal pt-icon-clipboard" to="/login">Register</Link>
+                    <Link className="pt-button pt-minimal" to="/login">Register</Link>
                 </div>
             </nav>
 

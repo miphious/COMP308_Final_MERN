@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import logo from './Assets/doctor.jpg';
 import './App.css';
 import Header  from './Components/Header';
@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <Header/>
         <br/>
-        <div className="w3-container">
+        <div className="W3-container">
         <img src={logo} className="image" alt="doctor"/>
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
