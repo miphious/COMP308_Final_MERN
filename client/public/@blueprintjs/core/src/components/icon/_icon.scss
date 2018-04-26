@@ -1,0 +1,48 @@
+// Copyright 2015 Palantir Technologies, Inc. All rights reserved.
+// Licensed under the terms of the LICENSE file distributed with this project.
+
+@import "~@blueprintjs/icons/src/icons";
+
+#{$icon-classes} {
+  display: inline-block;
+
+  @each $intent, $color in $pt-intent-colors {
+    &.#{$ns}-intent-#{$intent} {
+      color: $color;
+    }
+  }
+}
+
+span.#{$ns}-icon-standard {
+  @include pt-icon($pt-icon-size-standard);
+}
+
+span.#{$ns}-icon-large {
+  @include pt-icon($pt-icon-size-large);
+}
+
+span.#{$ns}-icon {
+  line-height: 1;
+  font-family: $icons20-family;
+  font-size: inherit;
+  font-weight: 400;
+  font-style: normal;
+
+  &::before {
+    @include pt-icon-font-smoothing();
+  }
+}
+
+@each $name, $content in $icons {
+  .#{$ns}-icon-#{$name}::before {
+    content: $content;
+  }
+}
+
+svg.#{$ns}-icon {
+  // respect dimensions exactly
+  flex: 0 0 auto;
+  vertical-align: top;
+  // inherit text color by default
+  fill: currentColor;
+}
